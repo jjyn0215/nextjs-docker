@@ -42,7 +42,7 @@ jobs:
   #     run: npm run lint
   
   build-and-push:
-    needs: lint
+    # needs: lint
     runs-on: ubuntu-latest
     # PR에서는 Docker 이미지를 빌드만 하고 푸시하지 않음
     if: github.event_name != 'pull_request'
